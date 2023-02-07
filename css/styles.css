@@ -1,3 +1,9 @@
+/*--------------------LAYOUT (para aplicar flex usamos contenedores --> divs)------------------------*/
+.main-container {
+    display: flex;
+    width: 1200px;
+}
+
 /**--------------------DETALLES GENERALES----------------*/
 body {
    
@@ -15,6 +21,8 @@ article h4 {
 /** ------------------------ ASIDE ---------------------------*/
 aside {
     background-color: maroon;
+    width: 30%;
+    margin-right: 3%;
 }
 
 aside * {
@@ -71,3 +79,8 @@ main section > h2 {
 .sobre-mi h2 {
     background-color: white;
 }
+
+/*------------------------------REFERENCIAS---------------------------------*/
+ .referencias {
+    display: flex;
+ }
