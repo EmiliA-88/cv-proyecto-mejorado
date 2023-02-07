@@ -1,6 +1,73 @@
-
+/**--------------------DETALLES GENERALES----------------*/
 body {
-    background: midnightblue;
+   
     font-family: 'Lato', sans-serif;
   
+}
+ul {
+    list-style-type: none;
+}
+article h3,
+article h4 {
+    font-weight: bold;
+}
+
+/** ------------------------ ASIDE ---------------------------*/
+aside {
+    background-color: maroon;
+}
+
+aside * {
+    color: antiquewhite;
+}
+
+aside h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+aside section h2:first-child /*para el primer h2 del section adentro del aside*/ {
+
+    border-bottom: 2px solid whitesmoke;
+
+}
+
+#foto-perfil img {
+    border-radius: 50%;
+}
+
+/*------------------------------ MAIN ------------------------------------*/
+
+/* (>) solo para los h2 que son hijos directos de los sections que están adentro del MAIN */
+main section > h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px ;
+
+}
+
+/*( La clas="hero" se llama así porque es un estandar de una sección que es mayor a todas las demás)-----*/
+.hero {
+    background-color: midnightblue;
+    
+ /*-------Para hacer un sombreado alrededor de la caja del MAIN------------
+    box-shadow: 3px 3px 30px 5px mediumpurple inset;
+ --------------------------------------------------------------------------*/
+}
+
+.hero h2 {
+    color: antiquewhite;
+    border-top: 2px solid antiquewhite;
+    /* estos text-transform y letter-spacing los pongo para que no me aplique lo del "main section > h2" (del "Front-End Developer jr."*/
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+
+ /*-------------------------------SOBRE MI----------------------------------*/
+
+.sobre-mi {
+    background-color: aquamarine;
+}
+.sobre-mi h2 {
+    background-color: white;
 }

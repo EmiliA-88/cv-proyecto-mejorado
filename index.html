@@ -19,11 +19,23 @@
 </head>
 <body>
     <aside>
-       ???
-    <figure >
+    <figure id="foto-perfil" >
         <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Lonnie Mitchell imagen profile">
         <!--<figcaption>Lonnie Mitchell</figcaption> Para poner el nombre al pie de la imagen -->
     </figure>
+
+    <section>
+        <h2>Datos Personales</h2>
+        <dl> <!--(definition list - lista de definición)-->
+            <dt>Nacimiento</dt><!----(Término. Lo que quiero definir)----->
+            <dd>1/1/1994</dd><!----(La definición de mi término)----->
+            <dt>Nacionalidad</dt>
+            <dd>Argentino</dd>
+            <dt>Estado Civil</dt>
+            <dd>Soltero</dd>
+        </dl>
+    </section>
+
     <section>
         <h2>Experiencia</h2>
        <ul>
@@ -74,14 +86,14 @@
     </section>
     </aside>
 
-    <main>
-        Esta es la seccion principal
 
-        <section>
-            <h1>C.V || Lonnie Mitchel</h1>
+    <!-------------------------------------Esta es la seccion principal------------------------------------------------->
+    <main>
+        <section class="hero">
+            <h1> Lonnie Mitchel</h1>
             <h2>Front-End Developer Jr.</h2>
         </section>
-        <section>
+        <section class="sobre-mi">
             <h2>Sobre mi</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -226,7 +238,9 @@
         </article>
     </section>
     <!---------------------Fin de la seccion de Referencias----------------------------------------->
-
-    </main>   
+    </main>  
+<footer>
+    Este es el Footer.
+</footer> 
 </body>
 </html>
