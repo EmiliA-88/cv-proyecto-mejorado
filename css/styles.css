@@ -18,6 +18,16 @@ article h4 {
     font-weight: bold;
 }
 
+ /*sea crea este div vacío para acomodar la seccion de la tabla DATOS PERSONALES*/
+ .clear {
+    clear: both;  
+ }
+
+ h1,
+ h2 {
+    text-transform: uppercase;
+ }
+
 /** ------------------------ ASIDE ---------------------------*/
 aside {
     background-color: maroon;
@@ -30,7 +40,8 @@ aside * {
 }
 
 aside h2 {
-    text-transform: uppercase;
+    color: whitesmoke;
+    border-top: 2px solid whitesmoke;
     letter-spacing: 5px;
 }
 
@@ -56,31 +67,86 @@ main section > h2 {
 /*( La clas="hero" se llama así porque es un estandar de una sección que es mayor a todas las demás)-----*/
 .hero {
     background-color: midnightblue;
+    padding: 15% 0;
+    text-align: center;
     
  /*-------Para hacer un sombreado alrededor de la caja del MAIN------------
     box-shadow: 3px 3px 30px 5px mediumpurple inset;
  --------------------------------------------------------------------------*/
 }
 
+.hero h1 {
+    letter-spacing: 10px;
+}
+
 .hero h2 {
     color: antiquewhite;
     border-top: 2px solid antiquewhite;
-    /* estos text-transform y letter-spacing los pongo para que no me aplique lo del "main section > h2" (del "Front-End Developer jr."*/
-    text-transform: none;
-    letter-spacing: normal;
+    /* estos text-transform y letter-spacing los pongo para que no me aplique lo del "main section > h2" (del "Front-End Developer jr."
+    text-transform: none;*/
+    letter-spacing: 10px;
 }
 
 
  /*-------------------------------SOBRE MI----------------------------------*/
 
-.sobre-mi {
+.sobre-mi p {
+    line-height: 2em;
     background-color: aquamarine;
-}
-.sobre-mi h2 {
-    background-color: white;
+    padding: 5px;
 }
 
 /*------------------------------REFERENCIAS---------------------------------*/
  .referencias {
     display: flex;
+    background-color: mediumorchid;
+    padding-bottom: 3%;
  }
+ .referencias article {
+    
+    text-align: center;
+ }
+
+ /*----para poner 2 cuadraditos arriba y dos abajo-----------------------------
+.referencias article {
+    width: 50%; 
+ /*---- NO ME ESTÁ FUNCIONANDO LO DE PONER 2 CUADRADOS ARRIBA Y DOS ABAJO. No me doy cuenta q estoy haciendo mal.  
+ } */
+
+
+ /*---DL--- TABLA DE LOS DATOS PERSONALES*/
+ dt,
+ dd {
+    line-height: 1.5em; /*para el alto del renglón*/
+    border-top: 1px solid whitesmoke;
+ }
+
+ dt {
+    clear: left;
+    width: 30%;
+    float: left;
+    font-weight: bolder; 
+ }
+
+ dd {
+    clear: right;
+    width: 50%;
+    float: left;
+    margin: 0;
+ }
+
+ dt:last-of-type,
+ dd:last-of-type {
+    border-bottom: 1px solid whitesmoke;
+ }
+
+
+
+
+
+ /*-------------------------FOOTER---------------------------*/
+ footer p {
+    text-align: center;
+ }
+
+ 
