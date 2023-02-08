@@ -2,6 +2,7 @@
 .main-container {
     display: flex;
     width: 1200px;
+    margin: 0 auto;
 }
 
 /**--------------------DETALLES GENERALES----------------*/
@@ -30,7 +31,7 @@ article h4 {
 
 /** ------------------------ ASIDE ---------------------------*/
 aside {
-    background-color: maroon;
+    background-color: #9FB39F;
     width: 30%;
     margin-right: 3%;
 }
@@ -53,6 +54,7 @@ aside section h2:first-child /*para el primer h2 del section adentro del aside*/
 
 #foto-perfil img {
     border-radius: 50%;
+  
 }
 
 /*------------------------------ MAIN ------------------------------------*/
@@ -66,7 +68,7 @@ main section > h2 {
 
 /*( La clas="hero" se llama así porque es un estandar de una sección que es mayor a todas las demás)-----*/
 .hero {
-    background-color: midnightblue;
+    background-color: #406640;
     padding: 15% 0;
     text-align: center;
     
@@ -92,14 +94,14 @@ main section > h2 {
 
 .sobre-mi p {
     line-height: 2em;
-    background-color: aquamarine;
+    background-color: #406640;
     padding: 5px;
 }
 
 /*------------------------------REFERENCIAS---------------------------------*/
  .referencias {
     display: flex;
-    background-color: mediumorchid;
+    background-color: #DFE6DF;
     
  }
  .referencias article figure {
@@ -155,12 +157,14 @@ meter {
 }
 meter::-webkit-meter-optimum-value {
     background: none;
-    background-color: mediumorchid;
+    background-color: #406640;
 }
 
  /*-------------------------FOOTER---------------------------*/
  footer p {
     text-align: center;
+    background-color: #BFCCBF;
+   
  }
 
  
