@@ -100,11 +100,14 @@ main section > h2 {
  .referencias {
     display: flex;
     background-color: mediumorchid;
-    padding-bottom: 3%;
- }
- .referencias article {
     
+ }
+ .referencias article figure {
     text-align: center;
+ }
+ .referencias figure img {
+    border-radius: 50%; 
+    
  }
 
  /*----para poner 2 cuadraditos arriba y dos abajo-----------------------------
@@ -140,13 +143,26 @@ main section > h2 {
     border-bottom: 1px solid whitesmoke;
  }
 
+ /*---------------------------------- SOCIALES/ICONOS -----------------------------------------*/
+a {
+    text-decoration: none;
+}
 
-
-
+/*------------------------------------ BARRAS MEDIDORAS / METERS----------------------------------*/
+meter {
+     display: block;
+     width: 80%;
+}
+meter::-webkit-meter-optimum-value {
+    background: none;
+    background-color: mediumorchid;
+}
 
  /*-------------------------FOOTER---------------------------*/
  footer p {
     text-align: center;
  }
+
+ 
 
  
